@@ -186,4 +186,10 @@
 </footer>
 
 </body>
+
+<div style="text-align: center; background: #fdf6e3; padding: 20px; border-top: 2px solid #e0d5b1; margin-top: 40px;" class="no-print">
+    <p style="color: #5c4033; font-family: 'Amiri', serif; margin-bottom: 10px;">عدد القراء الذين زاروا هذه الملحمة:</p>
+    <img src="https://profile-counter.glitch.me/hajomahmoud808-stories/count.svg" alt="Visitor Counter" style="border: 2px solid #5c4033; border-radius: 5px; padding: 5px; background: white;">
+    <p style="font-size: 12px; color: #888; margin-top: 10px;">جميع الحقوق محفوظة © 2024 للكاتب هجو محمود محمد</p>
+</div>
 </html>
