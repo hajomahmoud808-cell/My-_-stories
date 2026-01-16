@@ -291,83 +291,86 @@
             <p>قضينا أيامنا مختبئين في بيت قديم بأم درمان. لم تكن هناك مطاردات بشوارع النيل، بل كان هناك ترقب حذر. كنا نجلس مع "عمر" نتذكر رفاقنا في المناقل، ونشرب الشاي تحت ضوء خافت، ننتظر أن تأخذ العدالة مجراها. الخوف كان موجوداً، لكنه كان خوفاً صامتاً يدفعه الإيمان بقضيتنا.</p>
         </div>
 
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بوصلة الحكايا | الموسم الثامن والخاتمة</title>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Amiri', serif; background-color: #ffffff; color: #333; margin: 0; padding: 0; line-height: 1.8; overflow-x: hidden; }
-        .container { max-width: 650px; margin: 20px auto; padding: 20px; position: relative; }
-        
+<style>
+    /* إعدادات الشاشة والخلفية البيضاء */
+    body { 
+        font-family: 'Amiri', serif; 
+        background-color: #ffffff; 
+        color: #000000; 
+        margin: 0; 
+        padding: 15px; 
+        line-height: 1.6; 
+    }
 
-        .page-lines { position: fixed; right: 15px; top: 0; bottom: 0; width: 35px; display: flex; gap: 8px; z-index: 100; pointer-events: none; }
-        .line-orange { width: 7px; background-color: #f39c12; height: 100%; border-radius: 2px; }
-        .line-green { width: 7px; background-color: #27ae60; height: 100%; border-radius: 2px; }
+    /* تصغير المحتوى ليلائم عرض الشاشة */
+    .container { 
+        max-width: 100%; 
+        margin: auto; 
+    }
 
-        header { text-align: center; margin-bottom: 50px; border-bottom: 1px solid #eee; padding-bottom: 30px; }
-        h1 { font-size: 38px; color: #1a5276; margin-bottom: 10px; }
+    /* خط أسود رفيع فاصل */
+    .section { 
+        border-right: 3px solid #000000; /* خط جانبي أسود رفيع */
+        padding-right: 15px; 
+        margin-bottom: 30px; 
+    }
 
-        /* تنسيق الفصول */
-        .section { position: relative; padding-right: 30px; margin-bottom: 60px; border-right: 5px solid #f39c12; }
-        .section-title { font-size: 28px; color: #2c3e50; font-weight: bold; margin-bottom: 20px; display: block; }
-        .content { font-size: 22px; text-align: justify; padding-left: 10px; color: #2c3e50; }
-        
-        /* تنسيق الخاتمة المظللة */
-        .highlight-box { background-color: #fffcf5; border-right: 6px solid #c0392b; padding: 25px; margin: 40px 0; font-weight: bold; font-size: 23px; color: #111; }
-        .lessons-section { background-color: #f9f9f9; border: 1px solid #eee; padding: 20px; border-radius: 8px; margin-top: 30px; }
-        .lessons-title { color: #c0392b; font-weight: bold; font-size: 24px; margin-bottom: 15px; display: block; }
+    .section-title { 
+        font-size: 19px; 
+        font-weight: bold; 
+        color: #000000;
+        display: block; 
+        margin-bottom: 10px; 
+    }
 
-        .footer { text-align: center; margin-top: 60px; padding: 40px; border-top: 2px solid #f39c12; }
-        .final-tag { color: #f39c12; font-size: 28px; font-weight: bold; }
-    </style>
-</head>
-<body>
+    .content { 
+        font-size: 16px; 
+        text-align: justify; 
+    }
 
-<div class="page-lines">
-    <div class="line-orange"></div>
-    <div class="line-green"></div>
-</div>
+    /* الخاتمة والدروس المستفادة */
+    .conclusion {
+        border-top: 1px solid #000000;
+        margin-top: 40px;
+        padding-top: 20px;
+    }
+
+    .highlight-text {
+        font-weight: bold;
+        font-style: italic;
+        background-color: #fdfdfd;
+        padding: 10px;
+        border: 1px solid #eee;
+    }
+</style>
 
 <div class="container">
-    <header>
-        <h1>بوصلة الحكايا</h1>
-        <p style="font-style: italic; color: #666;">الموسم الثامن: فجر العودة ودروس العدالة المنقوصة</p>
-    </header>
-
     <div class="section">
-        <span class="section-title">الفصل الأول: طريق المناقل والرماد السياسي</span>
+        <span class="section-title">الموسم الثامن: فجر العودة</span>
         <div class="content">
-            ودعتُ الخرطوم بمرارة؛ فالعدالة التي نلناها كانت مذبوحة بمداد السياسة. في طريق العودة للمناقل، رأيت آثار التدمير الممنهج لركائز الدولة؛ مدارس مهجورة وترع جافة، وبشر هدّهم الفقر المتعمد نتيجة تقصير الدولة الواضح في أداء واجباتها تجاه مواطنيها. أدركتُ حينها أن منصور لم يكن إلا أداة صغيرة في يد نظام سياسي ضخم دمر ركائز الدولة السودانية وحولها إلى إقطاعيات خاصة لخدمة النفوذ والمال.
+            ودعتُ الخرطوم بمرارة؛ فالعدالة التي نلناها كانت مذبوحة بمداد السياسة. رأيتُ آثار التدمير الممنهج لركائز الدولة وتقصيرها الواضح في حقوق المواطن الأساسية. لقد كان منصور أداة لنظام سياسي حرم المواطن من أبسط مقومات الأمن والعدل.
         </div>
     </div>
 
     <div class="section">
-        <span class="section-title">الفصل الثاني: غرفة أخي وميراث الخراب</span>
+        <span class="section-title">غرفة أخي وميراث الجور</span>
         <div class="content">
-            فتحتُ باب "غرفة أخي" في المناقل، واستقبلني الصمت والتراب المترسب على ذكرياتنا. الكتب الطبية لا تزال بانتظاري تحت طبقة من الغبار، كأنها تنعي أحلامنا بدولة المؤسسات التي سحقها الجور. نظرتُ لخريطة السودان الممزقة على الجدار؛ كانت تجسيداً لما فعله الظلم السياسي ببلادنا من تفتيت للأرض وتمزيق للنسيج الاجتماعي، مما حرم المواطن السوداني من أبسط حقوقه في الأمن والاستقرار.
+            فتحتُ باب غرفة أخي، واستقبلني الصمت والتراب. الكتب الطبية تنعي أحلامنا بدولة المؤسسات التي سحقها الجور السياسي وتمدد فيها الفساد ليأكل حقوق الضعفاء.
         </div>
     </div>
 
-    <div class="section">
-        <span class="section-title">الفصل الثالث: الختام.. ثمن الوعي المر</span>
+    <div class="conclusion">
         <div class="content">
-            أدركتُ أن استرداد الأرض لا يعني بالضرورة استرداد العدالة؛ فجرحنا سيبقى شاهداً على زمنٍ ساد فيه الظلم وتمدد فيه الفساد السياسي ليأكل الأخضر واليابس. انقشع الضباب عن المناقل، لكنه لا يزال جاثماً فوق قاعات القضاء الصامتة. في هذه الغرفة، وتحت سقف بيتنا، بدأتُ أخط أول سطر في كتاب الحياة الجديدة، مؤمناً بأن الحق الذي تضيعه السياسة لا يسترده إلا إصرار أصحابه.
+            تُعلمنا هذه الرحلة أن تقصير الدولة في كفالة حقوق المواطن هو جورٌ صريح. إن تدمير قانون الدولة لحماية النفوذ السياسي هو الخطر الحقيقي الذي يواجه الوطن.
+        </div>
+        <div class="highlight-text">
+            "العدالة التي تُذبح بمداد السياسة، لا تُحييها إلا صرخات المظلومين الذين يرفضون الاستسلام للجور."
         </div>
     </div>
+    
+    <p style="text-align: center; font-weight: bold; margin-top: 30px;">.. تمت بحمد الله ..</p>
+</div>
 
-    <div class="lessons-section">
-        <span class="lessons-title">خاتمة ودروس: صرخة ضد الجور السياسي</span>
-        <div class="content">
-            تُعلمنا هذه الرحلة أن أخطر أنواع الظلم هو "الظلم السياسي الممنهج" الذي يستخدم مؤسسات الدولة كأدوات للقمع بدلاً من الحماية. إن تقصير الدولة في كفالة حقوق المواطن ليس مجرد إهمال إداري، بل هو جورٌ صريح يشرعن نهب الحقوق وتدمير المستقبل. لقد رأينا كيف يُحرم المواطن من عدالة القضاء حين يطغى النفوذ السياسي على هيبة القانون، لتصبح الدولة خصماً لمن كان يجب أن تكون ملاذاً لهم.
-        </div>
-    </div>
-
-    <div class="highlight-box">
-        "العودة للمناقل هي إعلان بأن الأرض عادت لأصحابها. لكن العدالة التي تُذبح بمداد السياسة، لا تُحييها إلا صرخات المظلومين الذين يرفضون نسيان حقوقهم الضائعة."
-    </div>
 
     <div class="footer">
         <div class="final-tag">.. تمت بحمد الله ..</div>
