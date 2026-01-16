@@ -290,141 +290,95 @@
             <span class="scene-title">3. ليلة في حي أم درمان القديم:</span>
             <p>قضينا أيامنا مختبئين في بيت قديم بأم درمان. لم تكن هناك مطاردات بشوارع النيل، بل كان هناك ترقب حذر. كنا نجلس مع "عمر" نتذكر رفاقنا في المناقل، ونشرب الشاي تحت ضوء خافت، ننتظر أن تأخذ العدالة مجراها. الخوف كان موجوداً، لكنه كان خوفاً صامتاً يدفعه الإيمان بقضيتنا.</p>
         </div>
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بوصلة الحكايا | المواجهة والقصاص</title>
+    <title>بوصلة الحكايا | الموسم الثامن والخاتمة</title>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Amiri', serif; background-color: #ffffff; color: #333; margin: 0; padding: 0; line-height: 1.8; }
-        .container { max-width: 750px; margin: 40px auto; padding: 20px; }
-        header { text-align: center; margin-bottom: 50px; padding-bottom: 20px; border-bottom: 1px solid #f39c12; }
-        h1 { font-size: 42px; color: #1a5276; margin: 0; }
-        .section { position: relative; padding-right: 30px; margin-bottom: 60px; }
-        .section::before { content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: 6px; background-color: #f39c12; border-radius: 3px; }
-        .section-title { font-size: 30px; color: #2c3e50; margin-bottom: 20px; display: block; font-weight: bold; border-bottom: 1px dashed #eee; }
-        .content { font-size: 23px; text-align: justify; color: #333; }
-        .highlight-quote { font-weight: bold; color: #c0392b; margin: 25px 0; display: block; font-style: italic; border-right: 4px solid #c0392b; padding-right: 15px; background: #fff5f5; padding: 10px; }
-        .footer-tag { text-align: center; color: #f39c12; font-weight: bold; margin-top: 60px; font-size: 26px; border-top: 2px solid #f39c12; padding-top: 20px; }
+        body { font-family: 'Amiri', serif; background-color: #ffffff; color: #333; margin: 0; padding: 0; line-height: 1.8; overflow-x: hidden; }
+        .container { max-width: 650px; margin: 20px auto; padding: 20px; position: relative; }
+        
+        /* الخطوط الجانبية الثابتة كما في الصور */
+        .page-lines { position: fixed; right: 15px; top: 0; bottom: 0; width: 35px; display: flex; gap: 8px; z-index: 100; pointer-events: none; }
+        .line-orange { width: 7px; background-color: #f39c12; height: 100%; border-radius: 2px; }
+        .line-green { width: 7px; background-color: #27ae60; height: 100%; border-radius: 2px; }
+
+        header { text-align: center; margin-bottom: 50px; border-bottom: 1px solid #eee; padding-bottom: 30px; }
+        h1 { font-size: 38px; color: #1a5276; margin-bottom: 10px; }
+
+        /* تنسيق الفصول */
+        .section { position: relative; padding-right: 30px; margin-bottom: 60px; border-right: 5px solid #f39c12; }
+        .section-title { font-size: 28px; color: #2c3e50; font-weight: bold; margin-bottom: 20px; display: block; }
+        .content { font-size: 22px; text-align: justify; padding-left: 10px; color: #2c3e50; }
+        
+        /* تنسيق الخاتمة المظللة */
+        .highlight-box { background-color: #fffcf5; border-right: 6px solid #c0392b; padding: 25px; margin: 40px 0; font-weight: bold; font-size: 23px; color: #111; }
+        .lessons-section { background-color: #f9f9f9; border: 1px solid #eee; padding: 20px; border-radius: 8px; margin-top: 30px; }
+        .lessons-title { color: #c0392b; font-weight: bold; font-size: 24px; margin-bottom: 15px; display: block; }
+
+        .footer { text-align: center; margin-top: 60px; padding: 40px; border-top: 2px solid #f39c12; }
+        .final-tag { color: #f39c12; font-size: 28px; font-weight: bold; }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <header>
-        <h1>بوصلة الحكايا: الموسم السابع والثامن</h1>
-        <p>عن العدالة الضائعة.. وتدمير الدولة بريشة هجو محمود</p>
-    </header>
-
-    <div class="section">
-        <span class="section-title">الموسم السابع - الفصل الأول: شيفرة "استاك" والموت الممنهج</span>
-        <div class="content">
-            دخلنا الخرطوم والمدينة تئن تحت وطأة نظام سياسي يرى في أرواح الفقراء مجرد أرقام في ميزانية الربح. في المعمل القومي (استاك)، كان الدكتور أحمد الحفيان يرتجف وهو يرينا النتائج؛ لم يكن الوباء انفجاراً بيولوجياً طبيعياً، بل كان تجربة مخبرية دنيئة. منصور لم يكن يعمل بمفرده، بل كان مدعوماً بجهات سياسية عليا قامت بتعطيل بروتوكولات الرقابة الصحية للسماح بمرور السموم إلى أجساد أهلنا في المناقل. لقد كان موتاً ممنهجاً يهدف إلى تهجيرنا قسرياً للاستيلاء على الأرض تحت غطاء "الكارثة الصحية".
-        </div>
-    </div>
-
-    <div class="section">
-        <span class="section-title">الموسم السابع - الفصل الثاني: دهاليز القضاء المدمر</span>
-        <div class="content">
-            في مكتب المحامية "عزة"، اصطدمنا بالحقيقة المرة؛ قانون الدولة تم تفصيله ليحمي الحيتان الكبيرة ويخنق الأسماك الصغيرة. أخبرتنا عزة أن الملفات السيادية "خط أحمر"، وأن الأدلة التي نحملها قد تختفي في لمح البصر داخل دهاليز المحاكم المسيسة. كان علينا أن نقاتل ليس فقط ضد منصور، بل ضد منظومة كاملة قامت بتدمير هيبة الدولة وتجيير القوانين لخدمة النفوذ السياسي. العدالة في بلدي أصبحت رحلة شاقة في غابة من البيروقراطية الفاسدة والمحسوبية.
-        </div>
-    </div>
-
-    <div class="section">
-        <span class="section-title">الموسم السابع - الفصل الثالث: مسرحية المحاكمة وانكسار الرموز</span>
-        <div class="content">
-            وقفتُ أمام القاضي، ورأيت منصور يجلس وحوله هالة من المحامين الذين يتقاضون أجورهم من دمائنا. كانت المحاكمة أشبه بمسرحية هزلية؛ فكلما قدمنا دليلاً دامغاً، تدخلت جهة سياسية لتعطيله بحجة "الأمن القومي". لكن، ولأن الحقيقة تملك صوتاً أعلى من الرصاص، استطعنا انتزاع إدانة جزئية. لم تكن عدالة كاملة، فالرؤوس الكبيرة ظلت طليقة، لكننا كسرنا رمزية منصور وأثبتنا للعالم أن الظلم السياسي مهما تجبر، سيبقى مطارداً بلعنات المظلومين الذين لا يملكون سوى "كلمة الحق".
-        </div>
-    </div>
-
-    <div class="section">
-        <span class="section-title">الموسم الثامن - الفصل الأول: طريق المناقل والرماد السياسي</span>
-        <div class="content">
-            ودعتُ الخرطوم بمرارة؛ فالعدالة التي نلناها كانت منقوصة، والقانون الذي استنجدنا به كان مكسور الجناح. في الطريق إلى المناقل، كنت أرى آثار التدمير الذي خلفته السياسات الخاطئة في القرى؛ مدارس مهجورة، وترع جافة، وبشر هدّهم الفقر المتعمد. أدركتُ أن منصور لم يكن إلا أداة في يد نظام سياسي دمر ركائز الدولة السودانية وحولها إلى إقطاعيات خاصة. العودة لم تكن احتفالاً بالنصر، بل كانت عودة لترميم ما أفسده الدهر والسياسة.
-        </div>
-    </div>
-
-    <div class="section">
-        <span class="section-title">الموسم الثامن - الفصل الثاني: غرفة أخي وميراث الخراب</span>
-        <div class="content">
-            فتحتُ باب "غرفة أخي" في المناقل، واستقبلني الصمت والتراب. وقع نظري على الكتب الطبية والمذكرات التي كانت تحلم بدولة المؤسسات، فشعرت بغصة في حلقي. كيف تحولت أحلامنا ببناء دولة القانون إلى كابوس نعيش فيه تحت رحمة النفوذ؟ نظرتُ إلى خريطة السودان الممزقة على الحائط، كانت تجسيداً حقيقياً لما فعله الظلم السياسي ببلادنا؛ تفتيت للأرض، وتمزيق للنسيج الاجتماعي، وتدمير لكل ما هو جميل باسم السلطة والمال.
-        </div>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بوصلة الحكايا | الرواية الكاملة</title>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Amiri', serif; background-color: #ffffff; color: #333; margin: 0; padding: 0; line-height: 1.8; }
-        .container { max-width: 750px; margin: 40px auto; padding: 20px; }
-        header { text-align: center; margin-bottom: 50px; padding-bottom: 20px; border-bottom: 1px solid #f39c12; }
-        h1 { font-size: 42px; color: #1a5276; margin: 0; }
-        /* التصميم الذي طلبته: الخط الجانبي البرتقالي */
-        .section { position: relative; padding-right: 30px; margin-bottom: 60px; }
-        .section::before { content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: 6px; background-color: #f39c12; border-radius: 3px; }
-        .section-title { font-size: 30px; color: #2c3e50; margin-bottom: 20px; display: block; font-weight: bold; border-bottom: 1px dashed #eee; }
-        .content { font-size: 23px; text-align: justify; color: #333; }
-        .highlight-quote { font-weight: bold; color: #c0392b; margin: 25px 0; display: block; font-style: italic; border-right: 4px solid #c0392b; padding-right: 15px; background: #fff5f5; padding: 15px; }
-        .footer-tag { text-align: center; color: #f39c12; font-weight: bold; margin-top: 60px; font-size: 26px; border-top: 2px solid #f39c12; padding-top: 20px; }
-    </style>
-</head>
-<body>
+<div class="page-lines">
+    <div class="line-orange"></div>
+    <div class="line-green"></div>
+</div>
 
 <div class="container">
     <header>
         <h1>بوصلة الحكايا</h1>
-        <p>تدوينات هجو محمود: عن الوطن، والعدالة، والظلم السياسي</p>
+        <p style="font-style: italic; color: #666;">الموسم الثامن: فجر العودة ودروس العدالة المنقوصة</p>
     </header>
 
     <div class="section">
-        <span class="section-title">الموسم السابع - الفصل الأول: دهاليز الخرطوم والموت المخبري</span>
+        <span class="section-title">الفصل الأول: طريق المناقل والرماد السياسي</span>
         <div class="content">
-            وصلنا الخرطوم والرهق ينهش أجسادنا، والمدينة تئن تحت وطأة نظام سياسي يرى في أرواح الفقراء مجرد أرقام في ميزانية الربح. في أروقة المعمل القومي، كان الدكتور أحمد الحفيان يرتجف وهو يرينا النتائج؛ لم يكن الوباء الذي ضرب المناقل قدراً محضاً، بل كان تجربة مخبرية دنيئة تمت برعاية جهات سياسية عليا. لقد تم تعطيل بروتوكولات الرقابة الصحية للسماح بمرور هذه السموم، في عملية تهدف إلى تهجيرنا قسرياً للاستيلاء على الأرض تحت غطاء الكارثة الصحية.
+            ودعتُ الخرطوم بمرارة؛ فالعدالة التي نلناها كانت مذبوحة بمداد السياسة. في طريق العودة للمناقل، رأيت آثار التدمير الممنهج لركائز الدولة؛ مدارس مهجورة وترع جافة، وبشر هدّهم الفقر المتعمد نتيجة تقصير الدولة الواضح في أداء واجباتها تجاه مواطنيها. أدركتُ حينها أن منصور لم يكن إلا أداة صغيرة في يد نظام سياسي ضخم دمر ركائز الدولة السودانية وحولها إلى إقطاعيات خاصة لخدمة النفوذ والمال.
         </div>
     </div>
 
     <div class="section">
-        <span class="section-title">الموسم السابع - الفصل الثاني: قضاءُ الدولةِ المذبوح</span>
+        <span class="section-title">الفصل الثاني: غرفة أخي وميراث الخراب</span>
         <div class="content">
-            في مكتب المحامية "عزة"، اصطدمنا بالحقيقة المرة؛ أن قانون الدولة تم تفصيله ليحمي الحيتان الكبيرة ويخنق الأسماك الصغيرة. أخبرتنا عزة أن الملفات السيادية "خط أحمر"، وأن الأدلة التي نحملها قد تختفي في لمح البصر داخل دهاليز المحاكم المسيسة. كان علينا أن نقاتل ضد منظومة كاملة قامت بتدمير هيبة الدولة وتجيير القوانين لخدمة النفوذ السياسي، حيث أصبحت العدالة في بلدي رحلة شاقة في غابة من الفساد والمحسوبية.
+            فتحتُ باب "غرفة أخي" في المناقل، واستقبلني الصمت والتراب المترسب على ذكرياتنا. الكتب الطبية لا تزال بانتظاري تحت طبقة من الغبار، كأنها تنعي أحلامنا بدولة المؤسسات التي سحقها الجور. نظرتُ لخريطة السودان الممزقة على الجدار؛ كانت تجسيداً لما فعله الظلم السياسي ببلادنا من تفتيت للأرض وتمزيق للنسيج الاجتماعي، مما حرم المواطن السوداني من أبسط حقوقه في الأمن والاستقرار.
         </div>
     </div>
 
     <div class="section">
-        <span class="section-title">الموسم السابع - الفصل الثالث: مسرحية المحاكمة وانكسار الحق</span>
+        <span class="section-title">الفصل الثالث: الختام.. ثمن الوعي المر</span>
         <div class="content">
-            وقفتُ أمام القاضي، ورأيت منصور يجلس وحوله هالة من المحامين الذين يتقاضون أجورهم من دمائنا. كانت المحاكمة أشبه بمسرحية هزلية؛ فكلما قدمنا دليلاً دامغاً، تدخلت جهة سياسية لتعطيله بحجة "الأمن القومي". استطعنا انتزاع إدانة جزئية، لكن الرؤوس الكبيرة ظلت طليقة في ظل تدمير قانون الدولة. لقد كسرنا رمزية منصور، لكننا اكتشفنا أن صعوبة الحصول على العدالة هي الثمن الذي يدفعه المظلوم في زمن الظلم السياسي الممنهج.
+            أدركتُ أن استرداد الأرض لا يعني بالضرورة استرداد العدالة؛ فجرحنا سيبقى شاهداً على زمنٍ ساد فيه الظلم وتمدد فيه الفساد السياسي ليأكل الأخضر واليابس. انقشع الضباب عن المناقل، لكنه لا يزال جاثماً فوق قاعات القضاء الصامتة. في هذه الغرفة، وتحت سقف بيتنا، بدأتُ أخط أول سطر في كتاب الحياة الجديدة، مؤمناً بأن الحق الذي تضيعه السياسة لا يسترده إلا إصرار أصحابه.
         </div>
     </div>
 
-    <div class="section">
-        <span class="section-title">الموسم الثامن - الفصل الأول: طريق المناقل والرماد السياسي</span>
+    <div class="lessons-section">
+        <span class="lessons-title">خاتمة ودروس: صرخة ضد الجور السياسي</span>
         <div class="content">
-            ودعتُ الخرطوم بمرارة؛ فالعدالة التي نلناها كانت منقوصة، والقانون الذي استنجدنا به كان مكسور الجناح. في الطريق إلى المناقل، كنت أرى آثار التدمير الذي خلفته السياسات الخاطئة؛ مدارس مهجورة وترع جافة وبشر هدّهم الفقر المتعمد. أدركتُ أن منصور لم يكن إلا أداة في يد نظام سياسي دمر ركائز الدولة السودانية وحولها إلى إقطاعيات خاصة، والعودة لم تكن احتفالاً بالنصر بل كانت عودة لترميم ما أفسده الدهر والسياسة.
+            تُعلمنا هذه الرحلة أن أخطر أنواع الظلم هو "الظلم السياسي الممنهج" الذي يستخدم مؤسسات الدولة كأدوات للقمع بدلاً من الحماية. إن تقصير الدولة في كفالة حقوق المواطن ليس مجرد إهمال إداري، بل هو جورٌ صريح يشرعن نهب الحقوق وتدمير المستقبل. لقد رأينا كيف يُحرم المواطن من عدالة القضاء حين يطغى النفوذ السياسي على هيبة القانون، لتصبح الدولة خصماً لمن كان يجب أن تكون ملاذاً لهم.
         </div>
     </div>
 
-    <div class="section">
-        <span class="section-title">الموسم الثامن - الفصل الثاني: غرفة أخي وميراث الخراب</span>
-        <div class="content">
-            فتحتُ باب "غرفة أخي" في المناقل، واستقبلني الصمت والتراب، الكتب الطبية كانت لا تزال بانتظاري تحت طبقة رقيقة من تراب الأرض التي سقيناها بالدموع. نظرتُ إلى خريطة السودان الممزقة المعلقة على الحائط، كانت تجسيداً حقيقياً لما فعله الظلم السياسي ببلادنا؛ تفتيت للأرض، وتمزيق للنسيج الاجتماعي، وتدمير لكل ما هو جميل. كيف تحولت أحلامنا ببناء دولة القانون إلى كابوس نعيش فيه تحت رحمة النفوذ؟.
-        </div>
+    <div class="highlight-box">
+        "العودة للمناقل هي إعلان بأن الأرض عادت لأصحابها. لكن العدالة التي تُذبح بمداد السياسة، لا تُحييها إلا صرخات المظلومين الذين يرفضون نسيان حقوقهم الضائعة."
     </div>
 
-    <div class="section">
-        <span class="section-title">الموسم الثامن - الفصل الثالث: الختام.. ثمن العدالة المستحيلة</span>
-        <div class="content">
-            أدركت أن الحصول على العدالة في ظل نظام دمر قانون الدولة هو ضرب من المحال، لكن المحاولة في حد ذاتها هي الانتصار. لقد استرددنا أرضنا في المناقل، لكننا خسرنا ثقتنا في منظومة العدالة السياسية؛ فجرحنا سيبقى شاهداً على زمنٍ ساد فيه الظلم وتمدد فيه الفساد السياسي ليأكل الأخضر واليابس. سنعلم أبناءنا أن الحق لا يُعطى بل يُنتزع، وأن الدولة لا تبنى بالوعود، بل بالقانون الذي لا ينحني أمام سلطان أو مال.
-            
-            <span class="highlight-quote">
-                "العودة للمناقل ليست مجرد رجوع لبيت قديم، بل هي إعلان بأن الأرض عادت لأصحابها. انقشع الضباب عن المناقل، لكنه لا يزال جاثماً فوق قاعات القضاء؛ فالعدالة التي تُذبح بمداد السياسة، لا تُحييها إلا صرخات المظلومين."
-            </span>
-        </div>
+    <div class="footer">
+        <div class="final-tag">.. تمت بحمد الله ..</div>
+        <div style="color: #888; margin-top: 10px;">نهاية صدى الرحلة - شهادة على زمن تدمير قانون الدولة</div>
     </div>
+
+</div>
+
+</body>
+</html>
+
 
     <div class="footer-tag">.. تمت الرواية بحمد الله ..</div>
 
