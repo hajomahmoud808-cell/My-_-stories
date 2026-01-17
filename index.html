@@ -8,63 +8,79 @@
     <style>
         :root { --primary: #1e272e; --accent: #b33939; --paper: #fdfaf6; --gold: #c5a059; }
         body { font-family: 'Amiri', serif; background-color: #f4f1ea; color: #2f3640; margin: 0; line-height: 1.8; scroll-behavior: smooth; }
-        header { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&q=80'); background-size: cover; color: white; text-align: center; padding: 80px 20px; border-bottom: 6px solid var(--gold); }
-        .library-shelf { max-width: 900px; margin: 40px auto; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 20px; }
-        .book-card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); text-align: center; border-top: 5px solid var(--accent); transition: 0.3s; }
-        .book-card:hover { transform: translateY(-5px); }
-        .read-btn { background: var(--accent); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 15px; font-weight: bold; }
-        .content-section { display: none; max-width: 850px; margin: 40px auto; background: var(--paper); padding: 50px; box-shadow: 0 15px 40px rgba(0,0,0,0.1); border-radius: 5px; }
+        header { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&q=80'); background-size: cover; color: white; text-align: center; padding: 100px 20px; border-bottom: 8px solid var(--gold); }
+        .library-shelf { max-width: 1000px; margin: -50px auto 50px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; padding: 20px; }
+        .book-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); text-align: center; border-top: 6px solid var(--accent); transition: 0.3s; }
+        .book-card:hover { transform: translateY(-10px); }
+        .read-btn { background: var(--accent); color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; font-weight: bold; font-size: 1.1rem; }
+        .content-section { display: none; max-width: 900px; margin: 50px auto; background: var(--paper); padding: 60px; box-shadow: 0 20px 50px rgba(0,0,0,0.1); border-radius: 5px; }
         .content-section:target { display: block; }
-        .marfa-header { font-family: 'Aref Ruqaa', serif; font-size: 2rem; color: var(--accent); border-bottom: 2px solid var(--gold); margin-top: 30px; display: block; }
-        .back-link { display: block; text-align: center; margin-top: 40px; color: var(--gold); text-decoration: none; font-weight: bold; font-size: 1.2rem; }
-        footer { text-align: center; padding: 40px; background: #111; color: var(--gold); margin-top: 50px; }
-        @media (max-width: 700px) { .library-shelf { grid-template-columns: 1fr; } }
+        .marfa-header { font-family: 'Aref Ruqaa', serif; font-size: 2.3rem; color: var(--accent); border-bottom: 2px solid var(--gold); margin-top: 50px; display: block; padding-bottom: 10px; }
+        h3.chapter-title { color: var(--primary); border-right: 4px solid var(--gold); padding-right: 15px; margin-top: 40px; }
+        p { font-size: 1.4rem; text-align: justify; margin-bottom: 25px; }
+        .back-link { display: block; text-align: center; margin-top: 60px; color: var(--gold); text-decoration: none; font-weight: bold; font-size: 1.3rem; border: 1px solid var(--gold); padding: 10px; width: 200px; margin-left: auto; margin-right: auto; }
+        footer { text-align: center; padding: 50px; background: #111; color: var(--gold); }
+        @media (max-width: 700px) { .library-shelf { grid-template-columns: 1fr; margin-top: 20px; } .content-section { padding: 30px 20px; } }
     </style>
 </head>
 <body>
 
 <header>
-    <h1 style="font-family: 'Aref Ruqaa'; font-size: 3rem; margin: 0;">المكتبة الرقمية الرسمية</h1>
-    <p>بوابتكم لأعمال الكاتب هجو محمود محمد</p>
+    <h1 style="font-family: 'Aref Ruqaa'; font-size: 3.5rem; margin: 0;">المكتبة الرقمية الرسمية</h1>
+    <p style="font-size: 1.5rem;">بوابتكم لأعمال الكاتب هجو محمود محمد</p>
 </header>
 
 <div class="library-shelf">
     <div class="book-card">
-        <h2 style="font-family: 'Aref Ruqaa';">دروب الشتات واليقين</h2>
-        <p>من رخام المنشية إلى طين عريطل.. رحلة البحث عن الأمان والوطن.</p>
-        <a href="#shatat" class="read-btn">إقرأ الرواية</a>
+        <h2 style="font-family: 'Aref Ruqaa'; font-size: 2rem;">دروب الشتات واليقين</h2>
+        <p>من رخام المنشية إلى طين عريطل.. رحلة البحث عن الأمان واليقين في قلب المعاناة والنزوح.</p>
+        <a href="#shatat" class="read-btn">إقرأ الرواية كاملة</a>
     </div>
     <div class="book-card">
-        <h2 style="font-family: 'Aref Ruqaa';">مرافئ الروح الخمسة</h2>
-        <p>خماسية أدبية توثق الصمود الإنساني في وجه الحروب والأوبئة.</p>
-        <a href="#marafie" class="read-btn">إقرأ السلسلة</a>
+        <h2 style="font-family: 'Aref Ruqaa'; font-size: 2rem;">مرافئ الروح الخمسة</h2>
+        <p>خماسية أدبية توثق الصمود الإنساني؛ من عتبات الغموض والرعب إلى ثغور الرحمة والسكينة.</p>
+        <a href="#marafie" class="read-btn">إقرأ السلسلة كاملة</a>
     </div>
 </div>
 
 <section id="shatat" class="content-section">
-    <h1 style="text-align: center; font-family: 'Aref Ruqaa'; color: var(--primary);">دروب الشتات واليقين</h1>
-    <p>كانت الرحلة صعبة، والدروب موحشة... (هنا يظهر نص الرواية الكامل الذي كتبته عن عريطل والمنشية).</p>
-    <p>لقد تعلمنا أن اليقين لا يأتي من الأماكن، بل من القلوب الصابرة التي تقاسمناها معها مرارة النزوح ودفء الاستقبال.</p>
+    <h1 style="text-align: center; font-family: 'Aref Ruqaa'; font-size: 3rem; color: var(--primary);">دروب الشتات واليقين</h1>
+    <p>كان قرار الرحيل من الخرطوم هو أصعب قرار اتخذناه، تركنا خلفنا رخام "المنشية" وذكريات العمر لنمضي في طريق مجهول. كانت الدروب موحشة وأصوات المدافع تلاحقنا، ولكن كلما ابتعدنا عن صخب المدينة، اقتربنا من بساطة الروح.</p>
+    <p>وصلنا إلى "عريطل"، تلك القرية التي احتضنتنا بطينها الطيب وقلوب أهلها الأطيب. هناك، حيث لا رخام ولا تكييف، وجدنا الدفء الحقيقي في "نفاج" الجار وفي لقمة العيش المقتسمة. لقد تعلمنا أن اليقين لا يأتي من جدران المنازل الفارهة، بل من القلوب الصابرة التي تقاسمنا معها مرارة النزوح ودفء الاستقبال. الوطن ليس مكاناً على الخريطة، بل هو الأمان الذي تجده حين يشتد بك التعب.</p>
     <a href="#" class="back-link">⬆ العودة للمكتبة</a>
 </section>
 
 <section id="marafie" class="content-section">
-    <h1 style="text-align: center; font-family: 'Aref Ruqaa'; color: var(--primary);">مرافئ الروح الخمسة</h1>
+    <h1 style="text-align: center; font-family: 'Aref Ruqaa'; font-size: 3rem; color: var(--primary);">مرافئ الروح الخمسة</h1>
+    
     <span class="marfa-header">المرفأ الأول: دفء تحت سقف واحد</span>
-    <p>دخلت الغرفة، وهناك رأيته! كان أخي مستلقياً على سريره، لكن زفيره كان عالياً كحشرجة مرعبة...</p>
+    <h3 class="chapter-title">الفصل الأول: عتبات الغموض</h3>
+    <p>أعلن والدي ذات مساء بلهجة حازمة أننا سننتقل إلى بيتٍ جديد مع بزوغ الفجر. حزمت أمتعتي والرهبة تسكن قلبي. دخلت الغرفة، وهناك رأيته! كان أخي مستلقياً على سريره، لكن زفيره كان عالياً كحشرجة مرعبة. صرخ بوجهي بنبرةٍ غريبة: "أخرج.. أخرج!". عدت لأبي مرتجفاً، وهناك كانت الصدمة.. كان أخي الحقيقي يقف عند الباب حاملاً العشاء! إذا كان أخي هنا، فمن الذي كان في الغرفة؟</p>
+    
+    <h3 class="chapter-title">الفصل الثاني: مرآة الهواجس</h3>
+    <p>مع خيوط الفجر الأولى، ذهبت لأغتسل، وحين نظرت إلى المرآة صرخت.. كان وجهي ملطخاً بالدماء! حين مسح والدي وجهي قال بهدوء: "لا شيء هنا يا بني، إنه مجرد وهم". وفجأة سمعت صوتاً من داخل الغرفة.. صوت نهشٍ ولهاثٍ وحشي! انغلق باب المطبخ بقوة، وتجمدت مكاني.</p>
+
+    <h3 class="chapter-title">الفصل الثالث: بزوغ الطمأنينة</h3>
+    <p>تلا رجل عجوز وقور كلماتٍ هادئة، وبدأ ذلك الكيان يتضاءل حتى تلاشى كالدخان. قال العجوز: "يا بني، هذا الكيان هو صدى لخوفك". أدركنا أن القوة تكمن في تماسكنا، وعشنا في ذلك البيت أجمل أيام عمرنا بعد أن طوينا صفحة الخوف.</p>
+
     <span class="marfa-header">المرفأ الثاني: أحببتها ولم تكن من نصيبي</span>
-    <p>توقف زمننا عند لحظة الوداع، وأدركت أن النصيب قد لا يمنحنا من نحب، لكنه يمنحنا القوة لننضج...</p>
+    <p>وقفت أمام النافذة أراقب المطر، وتذكرت ملامحها التي كانت تشبه خيوط الفجر الأولى. أحببتها بكل ما أوتيت من قوة، كانت هي السكينة في عالم من الضجيج. ولكن زمننا توقف عند لحظة الوداع. أدركت أن الحب ليس فشلاً، بل هو صدى لمشاعر صادقة سكنت النفس يوماً، والنصيب يمنحنا القوة لننضج.</p>
+
     <span class="marfa-header">المرفأ الثالث: فُرسان الإرادة</span>
-    <p>وسط ضجيج الآلات وعرق الجبين، أدركت أن السعادة ليست في تجنب المعارك، بل في خوضها بشرف...</p>
+    <p>وسط ضجيج الآلات وعرق الجبين في أرض العمل البعيدة، أدركت أن السعادة ليست في تجنب المعارك، بل في خوضها بشرف. الندوب التي على كفي هي أوسمة شرفي، تعلمت أن الكفاح هو اللغة الوحيدة التي تجعل للنجاح طعماً حقيقياً.</p>
+
     <span class="marfa-header">المرفأ الرابع: ثغور الرحمة</span>
-    <p>بصفتي ممرضاً في الجيش، واجهتُ الوباء بشجاعة؛ فكلاهما عدو يُهزم بالإيمان والعمل...</p>
+    <p>عندما قرعت طبول الحرب، كان النداء للكرامة. بصفتي ممرضاً في الميدان، خضت معركة ضد الأوبئة والوجع. رأيت كيف يمكن للرداء الأبيض أن يكون أقوى من البارود، وكيف يرمم الأمل أرواحاً أضناها التعب في مخيمات النزوح.</p>
+
     <span class="marfa-header">المرفأ الخامس: مرافئ السكينة</span>
-    <p>اليوم أجلس في بيتي الجديد، طويتُ صفحات الخوف، وفتحتُ صفحة السلام الدائم.</p>
+    <p>أخيراً، سكتت المدافع. التقيت بشريكة تفيض نضجاً وحناناً تقدر ندوب الماضي. اليوم، أجلس في بيتي الجديد، أنظر إلى عائلتي وأقول: "لقد انتصرنا". طويتُ صفحات الخوف، لأفتح صفحة السلام الدائم تحت سقفٍ واحد يغمره الحب.</p>
+    
     <a href="#" class="back-link">⬆ العودة للمكتبة</a>
 </section>
 
 <footer>
-    جميع الحقوق محفوظة للكاتب هجو محمود محمد &copy; 2026
+    جميع الحقوق محفوظة للكاتب هجو محمود محمد &copy; 2026 <br>
+    "الحياة لا تمنح السكينة لمن يهربون، بل لمن يواجهون العواصف بقلبٍ مؤمن."
 </footer>
 
 </body>
